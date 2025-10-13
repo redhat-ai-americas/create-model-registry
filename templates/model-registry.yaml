@@ -12,7 +12,7 @@ spec:
   grpc:
     port: 9090
   mysql:
-    database: modelregistry
+    database: {{ .Values.mysql.database }}
     host: {{ .Release.Name }}.{{ .Release.Namespace }}.svc.cluster.local
     passwordSecret:
       key: database-password
