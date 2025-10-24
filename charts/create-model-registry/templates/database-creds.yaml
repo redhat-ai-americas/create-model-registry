@@ -7,10 +7,10 @@ metadata:
     template.openshift.io/expose-database_name: '{.data[''database-name'']}'
     template.openshift.io/expose-password: '{.data[''database-password'']}'
     template.openshift.io/expose-username: '{.data[''database-user'']}'
-stringData:
-  database-name: {{ .Values.mysql.database }}
-  database-password: {{ .Values.mysql.password }}
-  database-user: {{ .Values.mysql.user }}
+data:
+  database-name: {{ .Values.mysql.database | b64enc }}
+  database-password: {{ .Values.mysql.password | b64enc }}
+  database-user: {{ .Values.mysql.user | b64enc }}
 type: Opaque
 ---
 kind: Secret
@@ -22,9 +22,9 @@ metadata:
     template.openshift.io/expose-database_name: '{.data[''database-name'']}'
     template.openshift.io/expose-password: '{.data[''database-password'']}'
     template.openshift.io/expose-username: '{.data[''database-user'']}'
-stringData:
-  MYSQL_USER: {{ .Values.mysql.user }}
-  MYSQL_PASSWORD: {{ .Values.mysql.password }}
-  MYSQL_DATABASE: {{ .Values.mysql.database }}
-  MYSQL_ROOT_PASSWORD: {{ .Values.mysql.root_password }}
+data:
+  MYSQL_USER: {{ .Values.mysql.user | b64enc }}
+  MYSQL_PASSWORD: {{ .Values.mysql.password | b64enc }}
+  MYSQL_DATABASE: {{ .Values.mysql.database | b64enc }}
+  MYSQL_ROOT_PASSWORD: {{ .Values.mysql.root_password | b64enc }}
 type: Opaque
