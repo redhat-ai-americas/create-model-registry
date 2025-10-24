@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  workbench-templates:
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: "2025-10-24T18:01:52.632111284Z"
+    description: A Helm chart for Kubernetes
+    digest: 31743bd1cb71c9735e0cfb659d8dd67eaa6c2332f9b0b3e572727c043d3ca45b
+    name: workbench-templates
+    type: application
+    urls:
+    - https://github.com/redhat-ai-americas/create-model-registry/releases/download/workbench-templates-0.0.1/workbench-templates-0.0.1.tgz
+    version: 0.0.1
+generated: "2025-10-24T18:01:52.632117173Z"
