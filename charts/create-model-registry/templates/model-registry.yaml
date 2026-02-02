@@ -20,7 +20,7 @@ spec:
     port: 3306
     skipDBCreation: false
     username: {{ .Values.mysql.user }}
-  oauthProxy:
+  kubeRBACProxy:
     port: 8443
     routePort: 443
     serviceRoute: enabled
