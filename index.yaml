@@ -2,6 +2,16 @@ apiVersion: v1
 entries:
   create-model-registry:
   - apiVersion: v2
+    appVersion: 0.0.4
+    created: "2026-02-03T15:43:52.083249412Z"
+    description: A chart for creating a new model registry in OpenShift AI.
+    digest: 36f5d0442308c9a99ac547dfe28e8a8a98424855adfa0c8ae5a9070440614f16
+    name: create-model-registry
+    type: application
+    urls:
+    - https://github.com/redhat-ai-americas/create-model-registry/releases/download/create-model-registry-0.0.4/create-model-registry-0.0.4.tgz
+    version: 0.0.4
+  - apiVersion: v2
     appVersion: 0.0.1
     created: "2025-10-24T18:04:07.952865453Z"
     description: A chart for creating a new model registry in OpenShift AI.
@@ -22,4 +32,4 @@ entries:
     urls:
     - https://github.com/redhat-ai-americas/create-model-registry/releases/download/workbench-templates-0.0.1/workbench-templates-0.0.1.tgz
     version: 0.0.1
-generated: "2025-10-24T18:04:07.952870632Z"
+generated: "2026-02-03T15:43:52.083258429Z"
