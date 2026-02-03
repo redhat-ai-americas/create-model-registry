@@ -4,6 +4,6 @@ description: A chart for creating a new model registry in OpenShift AI.
 
 type: application
 
-version: 0.0.3
+version: 0.0.4
 
-appVersion: "0.0.3"
+appVersion: "0.0.4"
